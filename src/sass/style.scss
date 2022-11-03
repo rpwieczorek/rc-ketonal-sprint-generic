@@ -4,7 +4,7 @@ $regular: 'Titillium Web', sans-serif;
 $button: black;
 $buttonHover: #f75172; 
 $pink-dark:white;
-$light: #f7f7f7;
+$light: #f8f8f8;
 $orange: #e9580c;
 
 html,
@@ -82,7 +82,7 @@ body {
     
   }
   .es-icons {
-    margin-top: 40px;
+    margin: 40px 0;
     width: 100%;
     position: relative;
     &__wrapper {
@@ -114,6 +114,30 @@ body {
       text-align: center;
     }
     
+  }
+  .es-introduction {
+    background-color: $light;
+    padding: 30px 0;
+    box-shadow: 0px -2px 10px 0px rgba(220, 220, 220, 1);
+    &__text {
+      @include text;
+      margin: 0 auto;
+      width: 80%;
+      font-size: 18px;
+      font-weight: 300
+    }
+    &__title {
+      @include text;
+      margin: 0 auto;
+      padding-top: 40px;
+      width: 70%;
+      font-size: 34px;
+      font-weight: 600;
+      text-align: center;
+      & span {
+        color: $orange;
+      }
+    }
   }
 }
 @media screen and (max-width: 460px) {
@@ -148,6 +172,15 @@ body {
     }
     &__single {
       width: 100% !important;
+    }
+  }
+  .es-introduction {
+    &__text {
+      text-align: center;
+      width: 90% !important;
+    }
+    &__title {
+      width: 90% !important;
     }
   }
 }
