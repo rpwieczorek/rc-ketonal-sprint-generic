@@ -322,7 +322,73 @@ body {
       font-weight: 300;
       padding: 20px;
     }
-  }  
+  }
+  .es-cross {
+    width: 100%;
+    &__wrapper {
+      position: relative;
+    }
+    &__titleWrapper {
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+    &__content {
+      position: absolute;
+      top:35%;
+      left: 47%;
+      padding-right: 80px;
+    }
+    &__title2 {
+      @include text;
+      color: #fff;
+      font-size: 3.5vw;
+      font-weight: 200;
+      padding-bottom: 40px;
+    }
+    &__subtitle {
+      @include text;
+      color: #fff;
+      font-size: 2.2vw;
+      font-weight: 200;
+    }
+    &__title {
+      @include text;
+      color: #fff;
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 3.5vw;
+      font-weight: 600;
+      padding: 20px;
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(to right,#fff,#fff);
+      border-image-slice: 1;
+    }
+    &__signature {
+      @include text;
+      font-size: 14px;
+      font-weight: 100;;
+      color: #000;
+      position: absolute;
+      right: 1%;
+      bottom: 1%;
+    }
+    &__text {
+      @include text;
+      font-size: 18px;
+      font-weight: 300;
+      padding: 20px;
+    }
+    &__image {
+      @include img;
+      &--desktop {
+        display: block;
+      }
+      &--mobile {
+        display: none;
+      }
+    }
+  }   
 }
 
 @media screen and (max-width: 460px) {
@@ -443,6 +509,63 @@ body {
     &__text {
       text-align: center !important;
     }
+  }
+  .es-cross {
+    &__image {
+      &--desktop {
+        display: none !important;
+      }
+      &--mobile {
+        display: block !important;
+      }
+    }
+  } 
+  .es-cross {
+    &__titleWrapper {
+      width: 100% !important;
+      position: absolute !important;
+      top:1% !important;
+      padding: 0 20px;
+    }
+    &__content {
+      padding-right: 20px !important;
+      top: 72% !important;
+      left: 0 !important;
+      padding: 10px;
+      width: 100% !important;
+      position: absolute !important;
+    }
+    &__title2 {
+      margin: 0 auto !important;
+      font-size: 5.2vw !important;
+      padding-bottom: 20px !important;
+      text-align: center;
+    }
+    &__subtitle {
+      margin: 0 auto !important;
+      font-size: 5.2vw !important;
+      text-align: center;
+    }
+    &__title {
+      text-align: center;
+      margin: 0 auto !important;
+      font-size: 6.2vw !important;
+    }
+    &__signature {
+      width: fit-content;
+      transform: rotate(90deg);
+      right: 80% !important;
+      bottom: 50% !important;
+    }
+    &__image {
+      @include img;
+      &--desktop {
+        display: block;
+      }
+      &--mobile {
+        display: none;
+      }
+    } 
   }    
 }
 @media screen and (min-width: 960px) {
@@ -450,7 +573,21 @@ body {
     &__title {
       font-size: 62px !important;
     }
-  }  
+  }
+  .es-cross {
+    &__content {
+      padding-right: 90px !important;
+    }
+    &__title2 {
+      font-size: 34px !important;
+    }
+    &__title {
+      font-size: 34px !important;
+    }
+    &__subtitle {
+      font-size: 24px !important;
+    } 
+  }   
 }
 @keyframes slideright {
   from {
