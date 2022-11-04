@@ -295,6 +295,34 @@ body {
       position: relative;
     }
   }  
+  .es-safety {
+    width: 100%;
+    &__content {
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    &__title {
+      @include text;
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 34px;
+      font-weight: 600;
+      padding: 20px;
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(to right,$gradientDark,$gradientLight);
+      border-image-slice: 1;
+      & span {
+        color: $orange;
+      }
+    }
+    &__text {
+      @include text;
+      font-size: 18px;
+      font-weight: 300;
+      padding: 20px;
+    }
+  }  
 }
 
 @media screen and (max-width: 460px) {
@@ -407,7 +435,15 @@ body {
         display: block !important;
       }
     }
-  }  
+  }
+  .es-safety {
+    &__content {
+      text-align: center !important;
+    }
+    &__text {
+      text-align: center !important;
+    }
+  }    
 }
 @media screen and (min-width: 960px) {
   .es-kv {
