@@ -120,7 +120,7 @@ body {
   .es-introduction {
     background-color: $light;
     padding: 30px 0;
-    box-shadow: 0px -2px 10px 0px rgba(220, 220, 220, 1);
+    box-shadow: 0px -10px 10px 0px rgba(237, 237, 237, 1);
     &__text {
       @include text;
       margin: 0 auto;
@@ -250,7 +250,7 @@ body {
     width: 100%;
     position: relative;
     background-color: $light;
-    box-shadow: 0px 3px 2px 0px rgba(220, 220, 220, 1);
+    box-shadow: 0px 10px 10px 0 rgba(237, 237, 237, 1);
     &__content {
       width: 100%;
       padding-left: 60px;
@@ -297,7 +297,7 @@ body {
       }
       &--4 {
         top: -30px;
-        left: -30px;
+        left: -44px;
       }
       
      
@@ -321,7 +321,7 @@ body {
       color: $orange;
       margin: 0 auto;
       padding: 12px 0;
-      text-align: center;
+      text-align: left;
       position: absolute;
       max-width: 250px;
       &--1 {
@@ -446,7 +446,10 @@ body {
       font-weight: 100;
       text-align: justify;
     }
-  }  
+  } 
+  .es-mobile-break {
+    display: none;
+  } 
 }
 
 @media screen and (max-width: 460px) {
@@ -524,6 +527,8 @@ body {
   .es-indications-2 {
     &__content {
       text-align: center !important;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
     }
     &__text {
       text-align: center !important;
@@ -546,10 +551,11 @@ body {
       width: 100% !important;
     }
   }
-
   .es-safety {
     &__content {
       text-align: center !important;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
     }
     &__text {
       text-align: center !important;
@@ -611,7 +617,10 @@ body {
         display: none;
       }
     } 
-  }    
+  }  
+  .es-mobile-break {
+    display: block !important;
+  }   
 }
 @media screen and (max-width: 820px) {
   .es-dose {
@@ -641,6 +650,7 @@ body {
     &__item {
       position: relative !important;
       max-width: 100% !important;
+      text-align: center !important;
       &--1 {
         bottom: 0 !important;
         left: 0 !important;
