@@ -284,20 +284,20 @@ body {
       padding-top: 14px;
       position: absolute;
       &--1 {
-        top: 10px;
-        left: 140px;
+        bottom: 260px;
+        left: 300px;
       }
       &--2 {
-        top: 10px;
-        left: -50px;
+        bottom: 260px;
+        left: 615px;
       }
       &--3 {
-        top: -30px;
-        left: 170px;
+        bottom: 110px;
+        left: 300px;
       }
       &--4 {
-        top: -30px;
-        left: -44px;
+        bottom: 110px;
+        left: 615px;
       }
       
      
@@ -325,20 +325,20 @@ body {
       position: absolute;
       max-width: 250px;
       &--1 {
-        bottom: 50%;
-        left: 10%;
+        bottom: 280px;
+        left: 180px;
       }
       &--2 {
-        bottom: 50%;
-        right: 10%;
+        bottom: 280px;
+        left: 667px;
       }
       &--3 {
-        bottom: 10%;
-        left: 10%;
+        bottom: 88px;
+        left: 132px;
       }
       &--4 {
-        bottom: 10%;
-        right: 1%;
+        bottom: 47px;
+        left: 667px;
       }
     }
   }  
@@ -622,7 +622,7 @@ body {
     display: block !important;
   }   
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 960px) {
   .es-dose {
     &__content {
       text-align: center !important;
@@ -657,7 +657,7 @@ body {
       }
       &--2 {
         bottom: 0 !important;
-        right: 0 !important;
+        left: 0 !important;
       }
       &--3 {
         bottom: 0 !important;
@@ -665,7 +665,7 @@ body {
       }
       &--4 {
         bottom: 0 !important;
-        right: 0 !important;
+        left: 0 !important;
       }
     }
   }
